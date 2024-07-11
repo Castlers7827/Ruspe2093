@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title>Contatti</title>
+    <style>
+		.back-arrow {
+			position: fixed;
+			top: 10px;
+			left: 10px;
+			z-index: 1;
+			cursor: pointer;
+		}
+		
+		.back-arrow::before {
+			content: "\2190";
+			font-size: 24px;
+			color: #333;
+		}
+	</style>
+</head>
+<body>
+	<a href="#" onclick="history.back()" class="back-arrow"></a>
+	<style>
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		
+		.contatti-box {
+			width: 300px;
+			background-color: #f0f0f0;
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.contatti-box h2 {
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 0;
+		}
+		
+		.contatti-box ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		.contatti-box li {
+			margin-bottom: 10px;
+		}
+		
+		.contatti-box li span {
+			font-weight: bold;
+		}
+		
+		.contatti-box li a {
+			text-decoration: none;
+			color: #337ab7;
+		}
+		
+		.contatti-box li a:hover {
+			color: #23527c;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="contatti-box">
+			<h2>Contatti</h2>
+			<ul>
+				<li><span>Telefono:</span> <a href="tel:3515787827">3515787827</a></li>
+				<li><span>Email:</span> <a href="https://www.google.com/intl/it/gmail/about/">khaiminh.chau00@gmail.com</a></li>
+				<li><span>Indirizzo:</span> Via Monte Carlo</li>
+				<li><span>Social media:</span>
+					<a href="https://www.facebook.com/">Facebook</a>
+					<a href="https://www.instagram.com/">Instagram</a>
+					<a href="https://www.twitter.com/">Twitter</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
