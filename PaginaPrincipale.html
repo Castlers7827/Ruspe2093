@@ -1,45 +1,85 @@
-<html>
-    <head>
-        <title>Nome edilizia</title>
-        <style>
-            .navbar {
-                background-color: #333;
-                color: #fff;
-                padding: 10px;
-                text-align: center;
-            }
-            
-            .navbar button {
-                background-color: #444;
-                color: #ffffff;
-                border: none;
-                padding: 10px 20px;
-                font-size: 16px;
-                cursor: pointer;
-            }
-            
-            .navbar button:hover {
-                background-color: #555;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="navbar">
-            <a href="pagina_destinazione.html">
-            <button>Home</button>
-        </a>
-        <a href="Chi siamo.html">
-            <button>Chi siamo</button>
-        </a>
-        <a href="Contatti.html">
-            <button>Contatti</button>
-        </a>
-        <a href="pagina_destiazionne.html">
-            <button>Galleria</button>
-        </a>
-        </div>
-        
-        <h1 align="center">DOVE C'E' TERRA, NOI FACCIAMO STRADA</h1>
-        <p align="center">Contenuto</p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+            font-size: 1em;
+            padding: 10px;
+            color: #fff;
+            border: 2px solid #b91bc7;
+            border-radius: 20px/50px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+            background: #b91bc7;
+        }
+
+        .button:hover {
+            background: #b91bc7;
+        }
+
+        .side-nav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .side-nav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .side-nav a:hover {
+            color: #f1f1f1;
+        }
+
+        .side-nav .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mySideNav" class="side-nav">
+        <a href="#" class="closebtn">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Chi siamo</a>
+        <a href="#">I nostri lavori</a>
+        <a href="#">Contatti</a>
+        <a href="#">Dove siamo</a>
+    </div>
+
+    <div id="main">
+        <p><img src="file:///C:/html/wetransfer_home-sito-web-docx_2024-07-10_0752/LOGO%20CAMPAGNA%20SRL%20DEFINITIVO%202024%20TRASPARENTE.png" width="200" height="90" border="1" align="left" onclick="openNav()"> 
+        </p>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySideNav").style.width = "20%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySideNav").style.width = "0";
+        }
+
+        document.querySelector('.closebtn').addEventListener("click", closeNav);
+    </script>
+</body>
 </html>
