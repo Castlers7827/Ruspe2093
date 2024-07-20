@@ -1,85 +1,64 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .button {
-            font-size: 1em;
-            padding: 10px;
-            color: #fff;
-            border: 2px solid #b91bc7;
-            border-radius: 20px/50px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: all 0.3s ease-out;
-            background: #b91bc7;
-        }
-
-        .button:hover {
-            background: #b91bc7;
-        }
-
-        .side-nav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
-
-        .side-nav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
-
-        .side-nav a:hover {
-            color: #f1f1f1;
-        }
-
-        .side-nav .closebtn {
-            position: absolute;
-            top: 20px;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-    </style>
-</head>
-<body>
-    <div id="mySideNav" class="side-nav">
-        <a href="#" class="closebtn">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">Chi siamo</a>
-        <a href="#">I nostri lavori</a>
-        <a href="#">Contatti</a>
-        <a href="#">Dove siamo</a>
-    </div>
-
-    <div id="main">
-        <p><img src="file:///C:/html/wetransfer_home-sito-web-docx_2024-07-10_0752/LOGO%20CAMPAGNA%20SRL%20DEFINITIVO%202024%20TRASPARENTE.png" width="200" height="90" border="1" align="left" onclick="openNav()"> 
-        </p>
-    </div>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySideNav").style.width = "20%";
-        }
-
-        function closeNav() {
-            document.getElementById("mySideNav").style.width = "0";
-        }
-
-        document.querySelector('.closebtn').addEventListener("click", closeNav);
-    </script>
-</body>
-</html>
+<!-- HTML -->
+<header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="file:///C:/html/wetransfer_home-sito-web-docx_2024-07-10_0752/LOGO%20CAMPAGNA%20SRL%20DEFINITIVO%202024%20TRASPARENTE.png" alt="Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="Untitled-1.html" class="nav-button">Home</a></li>
+        <li><a href="Chi siamo.html" class="nav-button">Chi siamo</a></li>
+        <li><a href="#" class="nav-button">I nostri lavori</a></li>
+        <li><a href="Contatti.html" class="nav-button">Contatti</a></li>
+        <li><a href="#" class="nav-button">Dove siamo</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- CSS -->
+  <style>
+    header {
+      background-color: #ffffff;
+      padding: 1em;
+      display: flex;
+      align-items: center;
+    }
+  
+   .logo {
+      margin-right: 20px;
+    }
+  
+   .logo img {
+      width: 200px; /* adjust the width to your liking */
+      height: 100px; /* adjust the height to your liking */
+    }
+  
+   .navbar {
+      display: flex;
+      align-items: center;
+    }
+  
+   .nav-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+   .nav-links li {
+      margin: 0 20px;
+    }
+  
+   .nav-button {
+      color: #fff;
+      text-decoration: none;
+      background-color: #444;
+      padding: 15px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+   .nav-button:hover {
+      background-color: #555;
+    }
+  </style>
